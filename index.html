@@ -335,7 +335,7 @@
 <script>
 
   //removing anchor links in URL - BEGIN
-  $("a[href^=#]").on("click", function(e) {
+  $('a[href^="#"]').on("click", function(e) {
     e.preventDefault();
     history.pushState({}, "", this.href);
   });
