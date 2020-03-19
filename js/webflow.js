@@ -8749,9 +8749,9 @@ Webflow.require('ix2').init({
                     "id": "a-21-n-4",
                     "actionTypeId": "TRANSFORM_MOVE",
                     "config": {
-                        "delay": 0,
+                        "delay": 150,
                         "easing": "outQuint",
-                        "duration": 300,
+                        "duration": 600,
                         "target": {
                             "useEventTarget": "CHILDREN",
                             "selector": ".member-image-block",
@@ -8831,7 +8831,7 @@ Webflow.require('ix2').init({
                     "config": {
                         "delay": 500,
                         "easing": "outQuint",
-                        "duration": 200,
+                        "duration": 500,
                         "target": {
                             "useEventTarget": "CHILDREN",
                             "selector": ".member-image-block",
