@@ -182,7 +182,7 @@
   </div>
 
 
-  <div id="home" data-section-name="" class="panel">
+  <div id="home" class="panel">
     <div class="content-container w-container">
       <div class="full-vh-centre-align">
         <div class="_70-content">
@@ -192,7 +192,7 @@
     </div>
   </div>
   
-  <div id="about" data-section-name="" class="panel">
+  <div id="about" class="panel">
     <div class="content-container w-container">
       <div class="full-vh-centre-align">
         <div class="_70-content">
@@ -204,7 +204,7 @@
     </div>
   </div>
   
-  <div id="mission" data-section-name="" class="panel">
+  <div id="mission" class="panel">
     <div class="content-container w-container">
       <div class="full-vh-centre-align">
         <div class="general-div">
@@ -228,7 +228,7 @@
     </div>
   </div>
   
-  <div id="projects" data-section-name="" class="panel">
+  <div id="projects" class="panel">
     <div class="content-container w-container">
       <div class="full-vh-centre-align">
         <div class="general-div">
@@ -263,7 +263,7 @@
     </div>
   </div>
   
-  <div id="sponsors" data-section-name="" class="panel">
+  <div id="sponsors" class="panel">
     <div class="content-container w-container">
       <div class="full-vh-centre-align">
         <div class="twocol-grid">
@@ -282,7 +282,7 @@
     </div>
   </div>
 
-  <div id="founders" data-section-name="" class="panel">
+  <div id="founders" class="panel">
     <div class="content-container w-container">
       <div class="full-vh-centre-align">
         <div class="general-div">
@@ -310,7 +310,7 @@
     </div>
   </div>
   
-  <div id="team" data-section-name="" class="panel">
+  <div id="team" class="panel">
     <div class="content-container w-container">
       <div class="full-vh-centre-align">
         <div class="general-div">
@@ -369,14 +369,18 @@
   
 <script>
 
-  //removing anchor links in URL - BEGIN
-  $('a[href^="#"]').on("click", function(e) {
-    e.preventDefault();
-    history.pushState({}, "", this.href);
+  //no anchor name in URL - BEGIN
+  var noHistory = noHistory || [];
+  noHistory.push(function() {
+    $('a').click(function() {
+      setTimeout(function() {
+        history.replaceState(null, null, ' ');
+      }, 0);
+    });
   });
-  //removing anchor links in URL - END
+  //no anchor name in URL - END
 
-
+  
 
   //dark mode favicon setup - BEGIN
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -394,6 +398,7 @@
   $(function() {
     $.scrollify({
       section: ".panel",
+      sectionName : false,
       interstitialSection: ".footer",
       scrollSpeed: 1000,
       touchScroll: false
@@ -402,6 +407,9 @@
   });
   //implementing full page scroll with scrollify - END
   
+
+
+
   //preventing links from clashing with scrollify - BEGIN
   $('a[href="#home"]').click(function(e){
         e.preventDefault()
@@ -430,6 +438,7 @@
   //preventing links from clashing with scrollify - END
 
   
+
 
   // custom mouse pointer - BEGIN
   $('body').on("mousemove", function (e) {
