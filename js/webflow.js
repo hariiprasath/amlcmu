@@ -7920,6 +7920,72 @@ Webflow.require('ix2').init({
                 "effectIn": null
             },
             "createdOn": 1584571843688
+        },
+        "e-24": {
+            "id": "e-24",
+            "eventTypeId": "MOUSE_OVER",
+            "action": {
+                "id": "",
+                "actionTypeId": "GENERAL_START_ACTION",
+                "config": {
+                    "delay": 0,
+                    "easing": "",
+                    "duration": 0,
+                    "actionListId": "a-27",
+                    "affectedElements": {},
+                    "playInReverse": false,
+                    "autoStopEventId": "e-25"
+                }
+            },
+            "mediaQueries": ["main", "medium", "small", "tiny"],
+            "target": {
+                "selector": ".founder-block",
+                "originalId": "5e6749afeaa386816a756beb|859875ab-b3de-166e-68d4-90e51f1a71c5",
+                "appliesTo": "CLASS"
+            },
+            "config": {
+                "loop": false,
+                "playInReverse": false,
+                "scrollOffsetValue": null,
+                "scrollOffsetUnit": null,
+                "delay": null,
+                "direction": null,
+                "effectIn": null
+            },
+            "createdOn": 1585773010356
+        },
+        "e-25": {
+            "id": "e-25",
+            "eventTypeId": "MOUSE_OUT",
+            "action": {
+                "id": "",
+                "actionTypeId": "GENERAL_START_ACTION",
+                "config": {
+                    "delay": 0,
+                    "easing": "",
+                    "duration": 0,
+                    "actionListId": "a-28",
+                    "affectedElements": {},
+                    "playInReverse": false,
+                    "autoStopEventId": "e-24"
+                }
+            },
+            "mediaQueries": ["main", "medium", "small", "tiny"],
+            "target": {
+                "selector": ".founder-block",
+                "originalId": "5e6749afeaa386816a756beb|859875ab-b3de-166e-68d4-90e51f1a71c5",
+                "appliesTo": "CLASS"
+            },
+            "config": {
+                "loop": false,
+                "playInReverse": false,
+                "scrollOffsetValue": null,
+                "scrollOffsetUnit": null,
+                "delay": null,
+                "direction": null,
+                "effectIn": null
+            },
+            "createdOn": 1585773010357
         }
     },
     "actionLists": {
@@ -9466,6 +9532,133 @@ Webflow.require('ix2').init({
                 }]
             }],
             "createdOn": 1584571854979,
+            "useFirstGroupAsInitialState": false
+        },
+        "a-27": {
+            "id": "a-27",
+            "title": "Founder Hover In",
+            "actionItemGroups": [{
+                "actionItems": [{
+                    "id": "a-27-n",
+                    "actionTypeId": "STYLE_FILTER",
+                    "config": {
+                        "delay": 0,
+                        "easing": "ease",
+                        "duration": 300,
+                        "target": {
+                            "useEventTarget": "CHILDREN",
+                            "selector": ".founder-image-block",
+                            "selectorGuids": ["a7431db3-6014-9744-33db-15de124531ca"]
+                        },
+                        "filters": [{
+                            "type": "saturate",
+                            "filterId": "e5fc",
+                            "value": 80,
+                            "unit": "%"
+                        }]
+                    }
+                }, {
+                    "id": "a-27-n-3",
+                    "actionTypeId": "STYLE_TEXT_COLOR",
+                    "config": {
+                        "delay": 0,
+                        "easing": "ease",
+                        "duration": 300,
+                        "globalSwatchId": "8a623bc6",
+                        "target": {
+                            "useEventTarget": "CHILDREN",
+                            "selector": ".member-name",
+                            "selectorGuids": ["947960d6-de45-5ca2-d198-b823661aff51"]
+                        },
+                        "rValue": 209,
+                        "gValue": 40,
+                        "bValue": 40,
+                        "aValue": 1
+                    }
+                }, {
+                    "id": "a-27-n-4",
+                    "actionTypeId": "TRANSFORM_MOVE",
+                    "config": {
+                        "delay": 0,
+                        "easing": "ease",
+                        "duration": 200,
+                        "target": {
+                            "useEventTarget": "CHILDREN",
+                            "selector": ".member-arrow",
+                            "selectorGuids": ["490a376b-f0ea-5fbb-54f8-d103e1ae5814"]
+                        },
+                        "xValue": 10,
+                        "xUnit": "PX",
+                        "yUnit": "PX",
+                        "zUnit": "PX"
+                    }
+                }]
+            }],
+            "createdOn": 1583865481688,
+            "useFirstGroupAsInitialState": false
+        },
+        "a-28": {
+            "id": "a-28",
+            "title": "Founder Hover Out",
+            "actionItemGroups": [{
+                "actionItems": [{
+                    "id": "a-28-n",
+                    "actionTypeId": "STYLE_FILTER",
+                    "config": {
+                        "delay": 0,
+                        "easing": "ease",
+                        "duration": 200,
+                        "target": {
+                            "useEventTarget": "CHILDREN",
+                            "selector": ".founder-image-block",
+                            "selectorGuids": ["a7431db3-6014-9744-33db-15de124531ca"]
+                        },
+                        "filters": [{
+                            "type": "saturate",
+                            "filterId": "e5fc",
+                            "value": 0,
+                            "unit": "%"
+                        }]
+                    }
+                }, {
+                    "id": "a-28-n-3",
+                    "actionTypeId": "STYLE_TEXT_COLOR",
+                    "config": {
+                        "delay": 0,
+                        "easing": "ease",
+                        "duration": 200,
+                        "globalSwatchId": "60a3cb6c",
+                        "target": {
+                            "useEventTarget": "CHILDREN",
+                            "selector": ".member-name",
+                            "selectorGuids": ["947960d6-de45-5ca2-d198-b823661aff51"]
+                        },
+                        "rValue": 5,
+                        "gValue": 5,
+                        "bValue": 5,
+                        "aValue": 1
+                    }
+                }, {
+                    "id": "a-28-n-4",
+                    "actionTypeId": "TRANSFORM_MOVE",
+                    "config": {
+                        "delay": 0,
+                        "easing": "ease",
+                        "duration": 150,
+                        "target": {
+                            "useEventTarget": "CHILDREN",
+                            "selector": ".member-arrow",
+                            "selectorGuids": ["490a376b-f0ea-5fbb-54f8-d103e1ae5814"]
+                        },
+                        "xValue": 0,
+                        "xUnit": "PX",
+                        "yUnit": "PX",
+                        "zUnit": "PX"
+                    }
+                }]
+            }],
+            "createdOn": 1583865481688,
+
             "useFirstGroupAsInitialState": false
         }
     },
