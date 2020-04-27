@@ -82,7 +82,7 @@
 
 
   /* to setup custom cursor - BEGIN */
-  html, body, a, .indicator-block{
+  /* html, body, a, .indicator-block{
     cursor:none;
   }
   #cursor {
@@ -97,7 +97,7 @@
     #cursor {
       display: none;
     }
-  }
+  } */
   /* to setup custom cursor - END */
   
 </style>
@@ -356,7 +356,7 @@
     </div>
   </div>
   
-  <div id="cursor"></div>
+  <!-- <div id="cursor"></div> -->
   <div class="w-embed"><canvas id="c"></canvas></div>
   
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -441,24 +441,30 @@
 
 
   // custom mouse pointer - BEGIN
-  $('body').on("mousemove", function (e) {
-    $('#cursor').offset({ 
-      left: (e.pageX)
-    , top : (e.pageY)
-    })
-  });
-  $('a').on("mouseenter", function(e){
-    $('#cursor').css({"width":"20px","height":"20px","background":"#d12828"})
-  });
-  $('a').on("mouseleave", function(e){
-    $('#cursor').css({"width":"12px","height":"12px","background":"#050505"})
-  });
-  $('.cta-block').on("mouseenter", function(e){
-    $('#cursor').css({"width":"25px","height":"25px","background":"#050505"})
-  });
-  $('.cta-block').on("mouseleave", function(e){
-    $('#cursor').css({"width":"12px","height":"12px","background":"#050505"})
-  });
+  // $('body').on("mousemove", function (e) {
+  //   $('#cursor').offset({ 
+  //     left: (e.pageX)
+  //   , top : (e.pageY)
+  //   })
+  // });
+  // $('a').on("mouseenter", function(e){
+  //   $('#cursor').css({"width":"20px !important","height":"20px !important","background":"#d12828 !important"})
+  // });
+  // $('a').on("mouseleave", function(e){
+  //   $('#cursor').css({"width":"12px","height":"12px","background":"#050505"})
+  // });
+  // $('.cta-block').on("mouseenter", function(e){
+  //   $('#cursor').css({"width":"25px !important","height":"25px !important","background":"#050505 !important"})
+  // });
+  // $('.cta-block').on("mouseleave", function(e){
+  //   $('#cursor').css({"width":"12px","height":"12px","background":"#050505"})
+  // });
+  // $('.footer').on("mouseenter", function(e){
+  //   $('#cursor').css({"background":"#fafafa"})
+  // });
+  // $('.footer').on("mouseleave", function(e){
+  //   $('#cursor').css({"background":"#fafafa"})
+  // });
   // custom mouse pointer - END
 
 
