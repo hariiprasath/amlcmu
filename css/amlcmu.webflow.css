@@ -103,7 +103,7 @@ a {
   -ms-flex-align: stretch;
   align-items: stretch;
   border-radius: 8px;
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
@@ -601,7 +601,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 12vh;
+  padding-top: 10vh;
 }
 
 .member-arrow {
@@ -978,7 +978,7 @@ a {
 @media screen and (min-width: 1350px) {
   .w-container  {
     max-width: 1200px;
-  }
+  } 
   .full-vh-centre-align {
     padding-top: 0vh;
   }
