@@ -601,7 +601,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 8vh;
+  padding-top: 12vh;
 }
 
 .member-arrow {
